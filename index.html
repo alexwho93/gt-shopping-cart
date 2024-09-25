@@ -1,79 +1,81 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cos Cumparaturi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body class="bg-gray-300 py-20 px-4">
-    <div
-      class="bg-white flex rounded-lg justify-between overflow-hidden max-w-4xl mx-auto"
-    >
-      <div class="p-6 w-2/3">
-        <div class="products-header flex justify-between mb-4">
-          <h2 class="text-2xl font-semibold text-gray-900">
-            Cos de cumparaturi
-          </h2>
-          <div><span id="total-quantity">0</span> produse</div>
-        </div>
-
-        <div id="products" class="flex flex-col">
-          <hr class="h-0.5 bg-gray-300 border-0" />
-        </div>
-      </div>
-
-      <div class="bg-gray-200 p-6 w-1/3">
-        <h2 class="text-xl font-semibold text-gray-900 text-center">
-          Adauga produs
-        </h2>
-        <hr class="h-0.5 my-8 bg-gray-300 border-0" />
-        <form id="add-form" class="max-w-sm mx-auto">
-          <div class="mb-5">
-            <label
-              for="product-name"
-              class="block mb-2 text-md font-medium text-gray-900"
-              >Nume produs</label
-            >
-            <input
-              type="text"
-              id="product-name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg-blue-500"
-              placeholder="ex. pantaloni"
-              required
-            />
-            <div
-              id="wrong-name"
-              class="text-end text-sm text-red-600 py-1 hidden"
-            >
-              *Date incorecte!
-            </div>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Cos Cumparaturi</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="script.js" defer></script>
+    </head>
+    <body class="bg-gray-300 py-20 px-4">
+      <div
+        class="bg-white flex rounded-lg justify-between overflow-hidden max-w-4xl mx-auto"
+      >
+        <div class="p-6 w-2/3">
+          <div class="products-header flex justify-between mb-4">
+            <h2 class="text-2xl font-semibold text-gray-900">
+              Cos de cumparaturi
+            </h2>
+            <div><span id="total-quantity">0</span> produse</div>
           </div>
 
-          <div class="mb-5 flex justify-between gap-2 items-center">
-            <label
-              for="product-quantity"
-              class="text-md font-medium text-gray-900"
-              >Cantitate:</label
-            >
-            <input
-              type="number"
-              id="product-quantity"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-16"
-              value="1"
-              required
-            />
+          <div id="products" class="flex flex-col">
+            <hr class="h-0.5 bg-gray-300 border-0" />
           </div>
+        </div>
 
-          <button
-            type="submit"
-            class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center block mx-auto"
-          >
+        <div class="bg-gray-200 p-6 w-1/3">
+          <h2 class="text-xl font-semibold text-gray-900 text-center">
             Adauga produs
-          </button>
-        </form>
+          </h2>
+          <hr class="h-0.5 my-8 bg-gray-300 border-0" />
+          <form id="add-form" class="max-w-sm mx-auto">
+            <div class="mb-5">
+              <label
+                for="product-name"
+                class="block mb-2 text-md font-medium text-gray-900"
+                >Nume produs</label
+              >
+              <input
+                type="text"
+                id="product-name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg-blue-500"
+                placeholder="ex. pantaloni"
+                required
+              />
+              <div
+                id="wrong-name"
+                class="text-end text-sm text-red-600 py-1 hidden"
+              >
+                *Date incorecte!
+              </div>
+            </div>
+
+            <div class="mb-5 flex justify-between gap-2 items-center">
+              <label
+                for="product-quantity"
+                class="text-md font-medium text-gray-900"
+                >Cantitate:</label
+              >
+              <input
+                type="number"
+                id="product-quantity"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-16"
+                value="1"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center block mx-auto"
+            >
+              Adauga produs
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </body>
+    </body>
+  </html>
 </html>
